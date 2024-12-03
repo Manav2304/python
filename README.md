@@ -1,5 +1,6 @@
-#Overview
+# Overview
 This repository contains a Jupyter Notebook, Week9b-Tutorial-KMeans.ipynb, which provides an in-depth tutorial on KMeans clustering. This tutorial is part of a data science learning series and covers the following:
+
 An introduction to KMeans clustering.
 Practical implementation using Python and popular libraries.
 Visualizing clustering results.
