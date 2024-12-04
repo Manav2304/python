@@ -32,10 +32,64 @@ Follow these steps to set up the project on your local machine:
 
 **Step 1: Clone the Repository**
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/Manav2304/python.git
 ```
-Step 2: Navigate to the Project Directory
+**Step 2: Navigate to the Project Directory**
 ```bash
-cd <your-repo>
+cd python
+```
+**Step 3: Launch Jupyter Notebook**
+```bash
+jupyter notebook
+```
+**Step 4: Open the Notebook**
+
+In Jupyter Notebook, open KMeans.ipynb to start working with the project.
+
+## Running the Tests
+
+End-to-End Tests
+
+These tests verify the functionality of the clustering implementation from data preprocessing to cluster visualization.
+
+Example test:
+
+```bash
+from sklearn.cluster import KMeans
+import numpy as np
+
+# Sample data
+data = np.array([[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]])
+
+# Running KMeans
+kmeans = KMeans(n_clusters=2, random_state=0).fit(data)
+assert len(kmeans.labels_) == len(data)
+```
+## Deployment
+To deploy this project on a live system, consider converting the Jupyter Notebook into a standalone Python script or hosting it on a Jupyter Notebook server. 
+
+Use the following command to export as a Python script:
+
+```bash
+jupyter nbconvert --to script KMeans.ipynb
 ```
 
+Built With
+
+<li>Python - Programming Language</li>
+<li>Jupyter Notebook - Development Environment</li>
+<li>Scikit-learn - Machine Learning Library</li>
+<li>Matplotlib & Seaborn - Visualization Libraries</li>
+
+## Authors
+
+Manav Patel - Initial work - GitHub Profile
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## Acknowledgments
+Ziyad Mohamed - For providing valuable materials and guidance as part of the Introduction to Data Analysis course.
+
+Rejoy James - For assisting with learning and utilizing GitHub effectively.
